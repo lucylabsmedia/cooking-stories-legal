@@ -7,33 +7,58 @@
     <style>
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #334155; max-width: 800px; margin: 0 auto; padding: 32px 20px; background-color: #FFFDF7; }
         h1 { color: #C2410C; border-bottom: 2px solid #FED7AA; padding-bottom: 8px; }
-        h2 { color: #1E293B; margin-top: 24px; }
+        h2 { color: #1E293B; margin-top: 24px; border-bottom: 1px solid #E2E8F0; padding-bottom: 4px; font-size: 18px; }
         p, li { font-size: 15px; }
+        ul { padding-left: 20px; }
         a { color: #EA580C; }
         .meta { color: #64748B; font-size: 14px; margin-bottom: 24px; }
+        .highlight { background-color: #FEF3C7; padding: 2px 6px; border-radius: 4px; font-weight: 500; }
     </style>
 </head>
 <body>
     <h1>Privacy Policy</h1>
-    <div class="meta"><strong>Cooking Stories: A Word Search Recipe Game</strong><br>Last Updated: August 2026</div>
+    <div class="meta"><strong>Cooking Stories: A Word Search Recipe Game</strong><br>Last Updated: September 2026</div>
 
-    <p>Lucy Labs Media ("we," "our," or "us") respects your privacy. This Privacy Policy explains how data is handled when you use <em>Cooking Stories: A Word Search Recipe Game</em> (the "App"). We are committed to minimizing data collection and ensuring a secure, offline-first casual gaming experience.</p>
+    <p>Lucy Labs Media ("we," "our," or "us") respects your personal privacy. This Privacy Policy explains our data practices for <em>Cooking Stories: A Word Search Recipe Game</em> (the "App"). We hold an <span class="highlight">offline-first, zero-tracking philosophy</span>: the App is engineered to deliver a serene culinary puzzle experience without harvesting your personal information, tracking your web behavior, or serving targeted advertisements.</p>
 
-    <h2>1. Information We Collect and Storage</h2>
+    <h2>1. Information We Do NOT Collect</h2>
+    <p>To ensure complete peace of mind, we explicitly disclose that:</p>
     <ul>
-        <li><strong>Local Game Progress & Preferences:</strong> Your game level unlocks, recipe collection, active streak, audio settings, and reminder preferences are stored strictly on your local device using Android DataStore / SharedPreferences. This data is not uploaded to our servers.</li>
-        <li><strong>In-App Purchases:</strong> All billing and payments are securely handled by the Google Play Store and RevenueCat. We never collect or store your payment details.</li>
-        <li><strong>Local Notifications:</strong> The Daily Morning Word Search Reminder is scheduled locally on your device. No personal identifier or token is sent to external servers.</li>
-        <li><strong>Tester Feedback:</strong> Information submitted voluntarily via our Google Form (such as email, device model, and bug notes) is used exclusively to troubleshoot bugs.</li>
+        <li>We do <strong>not</strong> require an account, email address, or social login to play.</li>
+        <li>We do <strong>not</strong> collect or store sensitive personal data (including health conditions, dietary restrictions, or medical history).</li>
+        <li>We do <strong>not</strong> integrate third-party advertising SDKs, data brokers, or behavioral tracking networks.</li>
+        <li>We do <strong>not</strong> access your device’s camera, microphone, contacts, location, or photo gallery.</li>
     </ul>
 
-    <h2>2. Permissions</h2>
-    <p>The App requests <code>POST_NOTIFICATIONS</code> on Android 13+ solely to deliver your opt-in morning baking reminder. You can toggle this off anytime in Settings.</p>
+    <h2>2. Information Stored Locally on Your Device</h2>
+    <ul>
+        <li><strong>Gameplay Progress & Unlocked Recipes:</strong> Your completed levels, chapter stars, unlocked recipe cards, active playing streak, sound/music toggles, and audio volume are stored 100% locally on your device hardware using secure Android Jetpack DataStore / Room database storage. This data is never transmitted to our servers.</li>
+        <li><strong>Local PDF Generation & Kitchen Printing:</strong> When you export a recipe card or the Collector's Cookbook to PDF, the document is assembled entirely on-device and passed directly to your native Android Print Spooler. We have zero visibility into what documents you print or save to your local file storage.</li>
+        <li><strong>Native Sharing:</strong> If you use the optional recipe share action, the share payload is handed off directly to your Android operating system's native share sheet. No record of your contacts or outgoing messages is ever gathered or stored by the App.</li>
+    </ul>
 
-    <h2>3. Children’s Privacy</h2>
-    <p>The App does not knowingly collect personal identifiable information from children under the age of 13.</p>
+    <h2>3. Third-Party Service Providers (Purchases & Troubleshooting)</h2>
+    <p>The App relies on trusted, standard mobile operating system services for payment processing and optional feedback:</p>
+    <ul>
+        <li><strong>Google Play Billing & RevenueCat:</strong> Optional in-app purchases (such as the Full Game Unlock or Master Chef Pass) are processed directly by Google Play In-App Billing and validated via RevenueCat. We never receive, process, or store your credit card details, banking credentials, or billing address. Transactions are governed by Google's Privacy Policy.</li>
+        <li><strong>Voluntary Beta Feedback:</strong> If you choose to submit feedback or report a software bug via our voluntary Google Forms portal, the information you provide (such as your email address, device model, and bug notes) is used exclusively by our engineering team to resolve bugs and improve game stability. It is never sold or used for marketing outreach.</li>
+    </ul>
 
-    <h2>4. Contact Us</h2>
-    <p>For questions regarding this policy, email us at: <a href="mailto:lucylabsmedia@gmail.com">lucylabsmedia@gmail.com</a></p>
+    <h2>4. Device Permissions</h2>
+    <ul>
+        <li><strong>POST_NOTIFICATIONS (Android 13+):</strong> Requested solely if you opt in to receive a gentle daily morning baking reminder. These notifications are scheduled and triggered 100% locally by your device’s internal clock. No push token or device identifier is transmitted to any cloud notification server. You can disable notifications anytime in the in-game settings or your device’s system settings.</li>
+    </ul>
+
+    <h2>5. Children’s Privacy (COPPA Compliance)</h2>
+    <p>The App is a peaceful casual game intended for general audiences. We do not knowingly collect, solicit, or maintain personal information from children under 13 years of age (or under 16 in certain jurisdictions). Because the App does not collect personal data from any user, it operates in strict compliance with the Children's Online Privacy Protection Act (COPPA) and international privacy frameworks.</p>
+
+    <h2>6. Changes to This Privacy Policy</h2>
+    <p>We may update this Privacy Policy from time to time to reflect game updates or legal requirements. Any modifications will be posted directly to this page with an updated revision date. Your continued use of the App following any update constitutes your acceptance of the revised policy.</p>
+
+    <h2>7. Contact Us</h2>
+    <p>If you have any questions or privacy concerns regarding this policy, please reach out directly to:</p>
+    <p><strong>Lucy Labs Media</strong><br>
+    Email: <a href="mailto:lucylabsmedia@gmail.com">lucylabsmedia@gmail.com</a><br>
+    Website: <a href="https://lucylabsmedia.github.io/cooking-stories/" target="_blank" rel="noopener">https://lucylabsmedia.github.io/cooking-stories/</a></p>
 </body>
 </html>
