@@ -5,60 +5,142 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - Cooking Stories</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #334155; max-width: 800px; margin: 0 auto; padding: 32px 20px; background-color: #FFFDF7; }
-        h1 { color: #C2410C; border-bottom: 2px solid #FED7AA; padding-bottom: 8px; }
-        h2 { color: #1E293B; margin-top: 24px; border-bottom: 1px solid #E2E8F0; padding-bottom: 4px; font-size: 18px; }
-        p, li { font-size: 15px; }
-        ul { padding-left: 20px; }
-        a { color: #EA580C; }
-        .meta { color: #64748B; font-size: 14px; margin-bottom: 24px; }
-        .highlight { background-color: #FEF3C7; padding: 2px 6px; border-radius: 4px; font-weight: 500; }
+        :root {
+            --primary: #C84B31;
+            --secondary: #88B7B5;
+            --bg: #FAF7F2;
+            --surface: #FFFFFF;
+            --text: #2D2A26;
+            --muted: #6E6860;
+            --border: #E8E2D8;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.65;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--surface);
+            padding: 48px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border);
+        }
+        header {
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 24px;
+            margin-bottom: 32px;
+        }
+        h1 {
+            color: var(--primary);
+            font-size: 2rem;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
+        .subtitle {
+            color: var(--muted);
+            font-size: 0.95rem;
+        }
+        h2 {
+            color: var(--primary);
+            font-size: 1.25rem;
+            margin-top: 32px;
+            margin-bottom: 12px;
+            border-left: 4px solid var(--secondary);
+            padding-left: 12px;
+        }
+        p, ul {
+            margin-bottom: 16px;
+            font-size: 1rem;
+        }
+        ul {
+            padding-left: 24px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        strong {
+            color: var(--text);
+        }
+        .badge {
+            display: inline-block;
+            background-color: #EBF4F4;
+            color: #2F6361;
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+        footer {
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+            font-size: 0.9rem;
+            color: var(--muted);
+            text-align: center;
+        }
+        a {
+            color: var(--primary);
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
-    <h1>Privacy Policy</h1>
-    <div class="meta"><strong>Cooking Stories: A Word Search Recipe Game</strong><br>Last Updated: September 2026</div>
 
-    <p>Lucy Labs Media ("we," "our," or "us") respects your personal privacy. This Privacy Policy explains our data practices for <em>Cooking Stories: A Word Search Recipe Game</em> (the "App"). We hold an <span class="highlight">offline-first, zero-tracking philosophy</span>: the App is engineered to deliver a serene culinary puzzle experience without harvesting your personal information, tracking your web behavior, or serving targeted advertisements.</p>
+<div class="container">
+    <header>
+        <span class="badge">Privacy Policy</span>
+        <h1>Cooking Stories: A Word Search Recipe Game</h1>
+        <p class="subtitle">Effective Date: September 26, 2026 | Application ID: com.brainfit.cookingstories</p>
+    </header>
 
-    <h2>1. Information We Do NOT Collect</h2>
-    <p>To ensure complete peace of mind, we explicitly disclose that:</p>
+    <h2>1. Overview & Commitment to Privacy</h2>
+    <p>We believe players deserve an uncluttered, peaceful culinary experience. <strong>Cooking Stories</strong> is designed with privacy by design:</p>
     <ul>
-        <li>We do <strong>not</strong> require an account, email address, or social login to play.</li>
-        <li>We do <strong>not</strong> collect or store sensitive personal data (including health conditions, dietary restrictions, or medical history).</li>
-        <li>We do <strong>not</strong> integrate third-party advertising SDKs, data brokers, or behavioral tracking networks.</li>
-        <li>We do <strong>not</strong> access your device’s camera, microphone, contacts, location, or photo gallery.</li>
+        <li><strong>No Account Creation:</strong> You do not need to create an account, log in, or provide personal credentials to play.</li>
+        <li><strong>100% Ad-Free:</strong> We do not include third-party advertising SDKs, ad networks, tracking pixels, or cross-app behavioral trackers.</li>
+        <li><strong>Offline Playability:</strong> Your puzzle progression and unlocked recipe box items are stored locally on your device.</li>
     </ul>
 
-    <h2>2. Information Stored Locally on Your Device</h2>
+    <h2>2. Information We Process & Third-Party Service Providers</h2>
+    <p>To support optional in-app purchases and verify game licenses, we utilize industry-standard, secure infrastructure:</p>
     <ul>
-        <li><strong>Gameplay Progress & Unlocked Recipes:</strong> Your completed levels, chapter stars, unlocked recipe cards, active playing streak, sound/music toggles, and audio volume are stored 100% locally on your device hardware using secure Android Jetpack DataStore / Room database storage. This data is never transmitted to our servers.</li>
-        <li><strong>Local PDF Generation & Kitchen Printing:</strong> When you export a recipe card or the Collector's Cookbook to PDF, the document is assembled entirely on-device and passed directly to your native Android Print Spooler. We have zero visibility into what documents you print or save to your local file storage.</li>
-        <li><strong>Native Sharing:</strong> If you use the optional recipe share action, the share payload is handed off directly to your Android operating system's native share sheet. No record of your contacts or outgoing messages is ever gathered or stored by the App.</li>
+        <li><strong>Google Play In-App Billing:</strong> All financial transactions, credit card handling, and billing information are collected and processed directly by Google Play. We never receive or store your payment details.</li>
+        <li><strong>RevenueCat:</strong> We utilize RevenueCat to validate digital receipt tokens and manage in-app entitlements (e.g., verifying your lifetime unlock status across app reinstalls). RevenueCat processes anonymous app user identifiers and purchase receipt timestamps strictly to fulfill your purchased access.</li>
     </ul>
 
-    <h2>3. Third-Party Service Providers (Purchases & Troubleshooting)</h2>
-    <p>The App relies on trusted, standard mobile operating system services for payment processing and optional feedback:</p>
+    <h2>3. Device Permissions & File Access</h2>
+    <p>Cooking Stories utilizes standard Android system features solely to support gameplay and recipe utilities:</p>
     <ul>
-        <li><strong>Google Play Billing & RevenueCat:</strong> Optional in-app purchases (such as the Full Game Unlock or Master Chef Pass) are processed directly by Google Play In-App Billing and validated via RevenueCat. We never receive, process, or store your credit card details, banking credentials, or billing address. Transactions are governed by Google's Privacy Policy.</li>
-        <li><strong>Voluntary Beta Feedback:</strong> If you choose to submit feedback or report a software bug via our voluntary Google Forms portal, the information you provide (such as your email address, device model, and bug notes) is used exclusively by our engineering team to resolve bugs and improve game stability. It is never sold or used for marketing outreach.</li>
+        <li><strong>PDF Recipe Export & Printing:</strong> When you choose to export or print an heirloom recipe card, the app invokes the native Android Print Spooler. The app does not inspect, read, or upload personal files from your device storage.</li>
     </ul>
 
-    <h2>4. Device Permissions</h2>
-    <ul>
-        <li><strong>POST_NOTIFICATIONS (Android 13+):</strong> Requested solely if you opt in to receive a gentle daily morning baking reminder. These notifications are scheduled and triggered 100% locally by your device’s internal clock. No push token or device identifier is transmitted to any cloud notification server. You can disable notifications anytime in the in-game settings or your device’s system settings.</li>
-    </ul>
+    <h2>4. Beta Testing Feedback & Intake</h2>
+    <p>If you participate in our optional Closed Beta program and submit feedback via our testing intake forms, any provided information (such as your tester email address, device model, and bug descriptions) is used strictly to diagnose crashes, resolve glitches, and improve game stability prior to public release. We never sell, rent, or monetize tester information.</p>
 
-    <h2>5. Children’s Privacy (COPPA Compliance)</h2>
-    <p>The App is a peaceful casual game intended for general audiences. We do not knowingly collect, solicit, or maintain personal information from children under 13 years of age (or under 16 in certain jurisdictions). Because the App does not collect personal data from any user, it operates in strict compliance with the Children's Online Privacy Protection Act (COPPA) and international privacy frameworks.</p>
+    <h2>5. Children’s Privacy (COPPA & GDPR-K Compliance)</h2>
+    <p>Cooking Stories is a family-friendly word search and baking puzzle game intended for general audiences. We do not knowingly collect personal identifiable information from children under the age of 13 (or under 16 in the European Union). Because the game features no social networking, public chat, or third-party behavioral ads, children can enjoy solving puzzles without exposure to tracking.</p>
 
-    <h2>6. Changes to This Privacy Policy</h2>
-    <p>We may update this Privacy Policy from time to time to reflect game updates or legal requirements. Any modifications will be posted directly to this page with an updated revision date. Your continued use of the App following any update constitutes your acceptance of the revised policy.</p>
+    <h2>6. Data Retention & Deletion</h2>
+    <p>Because core game progression is kept on your device, deleting or uninstalling the app permanently removes local progress data. For any questions regarding receipt validation records handled by Google Play or RevenueCat, you may contact us directly to request data verification or deletion.</p>
 
-    <h2>7. Contact Us</h2>
-    <p>If you have any questions or privacy concerns regarding this policy, please reach out directly to:</p>
-    <p><strong>Lucy Labs Media</strong><br>
-    Email: <a href="mailto:lucylabsmedia@gmail.com">lucylabsmedia@gmail.com</a><br>
-    Website: <a href="https://lucylabsmedia.github.io/cooking-stories/" target="_blank" rel="noopener">https://lucylabsmedia.github.io/cooking-stories/</a></p>
+    <h2>7. Policy Changes</h2>
+    <p>We may update this Privacy Policy periodically to reflect new features or platform requirements. Any updates will be published to this URL with a revised effective date.</p>
+
+    <h2>8. Contact Us</h2>
+    <p>If you have any questions, feedback, or data requests regarding this Privacy Policy, please contact our support team at:</p>
+    <p><strong>Email:</strong> <a href="mailto:support@lucylabsmedia.com">support@lucylabsmedia.com</a></p>
+
+    <footer>
+        &copy; 2026 Cooking Stories. All rights reserved.
+    </footer>
+</div>
+
 </body>
 </html>
